@@ -12,4 +12,5 @@
         android:background="@drawable/ic_launcher_background"
         android:text="@string/hello_blank_fragment" />
 
+
 </FrameLayout>

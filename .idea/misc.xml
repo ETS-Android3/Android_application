@@ -3,11 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/drawable/photo.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_first_tab.xml" value="0.23814486711829078" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_first_tab.xml" value="0.264" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_second_tab.xml" value="0.23814486711829078" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_third_tab.xml" value="0.23814486711829078" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/gallery_image.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/gallery_image_round.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.18541666666666667" />
       </map>
     </option>
   </component>
