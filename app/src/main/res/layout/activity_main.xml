@@ -10,7 +10,8 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="69dp"
+        app:tabIndicatorColor="@android:color/black">
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/item1"
@@ -36,4 +37,10 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:name=".ImageActivity"
+        android:label="Selected Image"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
 </LinearLayout>

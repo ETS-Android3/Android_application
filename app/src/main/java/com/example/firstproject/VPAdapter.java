@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class VPAdapter extends FragmentPagerAdapter {
 
     private ArrayList<Fragment> arrayList = new ArrayList<>();
-    private ArrayList<String> name = new ArrayList<>();
+//    private ArrayList<String> name = new ArrayList<>();
 
     public VPAdapter(@NonNull FragmentManager fm) {
         super(fm);
@@ -20,17 +20,17 @@ public class VPAdapter extends FragmentPagerAdapter {
         arrayList.add(new SecondTab());
         arrayList.add(new ThirdTab());
 
-        name.add("1번 탭");
-        name.add("2번 탭");
-        name.add("3번 탭");
+//        name.add("1번 탭");
+//        name.add("2번 탭");
+//        name.add("3번 탭");
     }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position)
-    {
-        return name.get(position);
-    }
+//    @Nullable
+//    @Override
+//    public CharSequence getPageTitle(int position)
+//    {
+//        return name.get(position);
+//    }
 
     @NonNull
     @Override
