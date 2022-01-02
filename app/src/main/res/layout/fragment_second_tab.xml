@@ -19,7 +19,7 @@
     </GridView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnCam"
+        android:id="@+id/btn_shuffle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
