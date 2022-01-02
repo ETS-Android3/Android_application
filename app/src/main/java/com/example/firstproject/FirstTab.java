@@ -166,10 +166,10 @@ public class FirstTab extends Fragment {
 
                 ContactsVO contactsVO = gson.fromJson(jsonArray.get(index).toString(), ContactsVO.class);
 
-                while (index == 0) {
+                /*while (index == 0) {
                     list_contacts.add(contactsVO);
                     index++;
-                }
+                }*/
 
                 int sortIndex = 0;
                 while (sortIndex < list_contacts.size()) {
@@ -187,48 +187,6 @@ public class FirstTab extends Fragment {
 
         return list_contacts;
     }
-    /*public ArrayList<ContactsVO> getContactList() {
-        ArrayList<ContactsVO> list_contacts = new ArrayList<>();
-        Gson gson = new Gson();
-        AssetManager assetManager = getResources().getAssets();
-
-        try {
-            InputStream is = assetManager.open("contacts.json");
-            byte[] buffer = new byte[is.available()];
-            is.read(buffer);
-            is.close();
-            String json = new String(buffer, "UTF-8");
-
-            JSONObject jsonObject = new JSONObject(json);
-
-            JSONArray jsonArray = jsonObject.getJSONArray("contacts");
-
-            int index = 0;
-            while (index < jsonArray.length()) {
-
-                ContactsVO contactsVO = gson.fromJson(jsonArray.get(index).toString(), ContactsVO.class);
-
-                while (index == 0) {
-                    list_contacts.add(contactsVO);
-                    index++;
-                }
-
-                int sortIndex = 0;
-                while (sortIndex < list_contacts.size()) {
-                    int compareResult = list_contacts.get(sortIndex).name.compareTo(contactsVO.name);
-                    if (compareResult > 0) break;
-                    else sortIndex++;
-                }
-                list_contacts.add(sortIndex, contactsVO);
-
-                index++;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return list_contacts;
-    }*/
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     public void search(String charText) {
