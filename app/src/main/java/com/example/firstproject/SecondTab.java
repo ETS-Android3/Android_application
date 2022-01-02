@@ -1,32 +1,18 @@
 package com.example.firstproject;
 
-import static android.content.Intent.getIntent;
-
-import android.Manifest;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
-import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
+
 import android.widget.GridView;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 
-import java.util.Collections;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -140,7 +126,7 @@ public class SecondTab extends Fragment {
         gridViewImages.setAdapter(imageGridAdapter);
 
         View root = (View)inflater.inflate(R.layout.fragment_second_tab, container, false);
-        com.google.android.material.floatingactionbutton.FloatingActionButton shuffle_button = (com.google.android.material.floatingactionbutton.FloatingActionButton) viewgroup.findViewById(R.id.btnCam);
+        com.google.android.material.floatingactionbutton.FloatingActionButton shuffle_button = (com.google.android.material.floatingactionbutton.FloatingActionButton) viewgroup.findViewById(R.id.btn_shuffle);
         shuffle_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
