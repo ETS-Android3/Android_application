@@ -27,16 +27,16 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
 
-//        // 탭에 이미지 추가(이미지를 안 넣을거면 38번 줄까지는 생략해도 됨)
-//        ArrayList<Integer> image = new ArrayList<>();
-//        image.add(R.drawable.photo);
-//        image.add(R.drawable.person);
-//        image.add(R.drawable.folder);
-//
-//        for (int i = 0; i < 3; i++)
-//        {
-//            tabLayout.getTabAt(i).setIcon(image.get(i));
-//        }
+        // 탭에 이미지 추가(이미지를 안 넣을거면 38번 줄까지는 생략해도 됨)
+        ArrayList<Integer> image = new ArrayList<>();
+        image.add(R.drawable.contact);
+        image.add(R.drawable.gallery);
+        image.add(R.drawable.star);
+
+        for (int i = 0; i < 3; i++)
+        {
+            tabLayout.getTabAt(i).setIcon(image.get(i));
+        }
     }
 }
 

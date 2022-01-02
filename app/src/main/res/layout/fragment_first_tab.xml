@@ -58,7 +58,5 @@
 
     "layout_marginRight = 16dp"
     android:text="Button" />
-
-
     ]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

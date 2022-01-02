@@ -3,13 +3,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ThirdTab">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/teal_700"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".LoginActivity">
 
+        <EditText
+            android:id="@+id/login_name"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+
+            android:layout_marginStart="95dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="110dp"
+            android:ems="10"
+            android:hint="이름"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/login_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/defaultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            app:layout_constraintBaseline_toBaselineOf="@+id/join_button"
+            app:layout_constraintStart_toStartOf="@+id/login_password" />
+
+        <EditText
+            android:id="@+id/login_number"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="40dp"
+            android:ems="10"
+            android:hint="전화번호(숫자만)"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/login_password"
+            app:layout_constraintEnd_toEndOf="@+id/login_name"
+            app:layout_constraintStart_toStartOf="@+id/login_name"
+            app:layout_constraintTop_toBottomOf="@+id/login_name" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginBottom="41dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/login_button"
+            app:layout_constraintStart_toStartOf="@+id/login_number" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/login_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/colorAccent" />
+
+
+        <Button
+            android:id="@+id/join_button"
+            style="@style/defaultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="190dp"
+            android:text="회원가입"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/login_password" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
