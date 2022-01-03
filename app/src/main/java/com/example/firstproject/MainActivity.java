@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
@@ -33,10 +34,17 @@ public class MainActivity extends AppCompatActivity {
         image.add(R.drawable.gallery);
         image.add(R.drawable.star);
 
+
         for (int i = 0; i < 3; i++)
         {
             tabLayout.getTabAt(i).setIcon(image.get(i));
         }
+
+        DBHelper helper;
+        SQLiteDatabase db;
+        helper = new DBHelper(MainActivity.this, "FirstProject.db", null, 1);
+        db = helper.getWritableDatabase();
+        helper.onCreate(db);
     }
 }
 
