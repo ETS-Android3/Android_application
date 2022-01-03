@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".JoinActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustNothing">
         </activity>
@@ -30,7 +30,16 @@
             android:name=".ImageActivity"
             android:label="Selected Image">
         </activity>
-
+        <activity
+            android:name=".JoinSurveyActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+        </activity>
+        <activity
+            android:name=".MainAppActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+        </activity>
     </application>
 
 
