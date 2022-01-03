@@ -3,20 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/drawable/photo.xml" value="0.14583333333333334" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/activity_join.xml" value="0.264" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_first_tab.xml" value="0.264" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_second_tab.xml" value="0.6" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_third_tab.xml" value="0.264" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/simple_image.xml" value="0.16" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/gallery_image.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/gallery_image_round.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.18541666666666667" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/xml/file_paths.xml" value="0.1287037037037037" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_first_tab.xml" value="0.23814486711829078" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_second_tab.xml" value="0.23814486711829078" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_third_tab.xml" value="0.23814486711829078" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19316239316239317" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/drawable/border_bottom.xml" value="0.19316239316239317" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/drawable/border_upbottom.xml" value="0.19316239316239317" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19316239316239317" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/drawable/photo.xml" value="0.22136752136752136" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/drawable/round_background.xml" value="0.19316239316239317" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/drawable/round_background_gray.xml" value="0.19316239316239317" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/activity_join.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/activity_receive_request.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/activity_send_request.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/activity_send_request2.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/contacts_search_item_view.xml" value="0.6" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/content_send_request.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/first_tab_dialog_fragment.xml" value="0.4" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/first_tab_item_view.xml" value="0.4" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/fragment_first_tab.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/fragment_second.xml" value="0.4" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/fragment_second_tab.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/fragment_third_tab.xml" value="0.1405982905982906" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/receive_request_item_view.xml" value="0.264" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/third_tab_main_activity.xml" value="0.3135021097046414" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/third_tab_main_item_iew.xml" value="0.2482905982905983" />
+        <entry key="..\:/Users/midst/AndroidStudioProjects/Android_application/app/src/main/res/layout/third_tab_main_item_view.xml" value="0.4" />
       </map>
     </option>
   </component>

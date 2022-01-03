@@ -102,12 +102,12 @@ public class FirstTab extends Fragment {
         searchName = rootView.findViewById(R.id.searchName);
         textView2 =rootView.findViewById(R.id.textView2);
         dialogOpenButton = rootView.findViewById(R.id.dialogOpenButton);
+
         list = getContactList();
         adapter = new FirstTabAdapter(getActivity(), list);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(adapter);
         arraylist = list;
-
 
         //EditText 검색 리스너
         searchName.addTextChangedListener(new TextWatcher() {

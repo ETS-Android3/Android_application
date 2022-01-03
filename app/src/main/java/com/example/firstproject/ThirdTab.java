@@ -1,6 +1,9 @@
 package com.example.firstproject;
 
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,7 +13,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.GridView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +26,16 @@ public class ThirdTab extends Fragment {
 
     private String mParam1;
     private String mParam2;
+
+    private EditText login_name;
+    private EditText login_number;
+    private EditText login_password;
+    private Button join_button;
+    private Button login_button;
+
+    private String user_name;
+    private String user_number;
+    private String user_password;
 
     public ThirdTab() {
     }
@@ -51,20 +63,69 @@ public class ThirdTab extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         ViewGroup viewgroup = (ViewGroup) inflater.inflate(R.layout.fragment_third_tab, container, false);
-        EditText login_name = (EditText) viewgroup.findViewById(R.id.login_name);
-        EditText login_number = (EditText) viewgroup.findViewById(R.id.login_number);
-        EditText login_password = (EditText) viewgroup.findViewById(R.id.login_password);
-        Button join_button = (Button) viewgroup.findViewById(R.id.join_button);
+        login_name = (EditText) viewgroup.findViewById(R.id.login_name);
+        login_number = (EditText) viewgroup.findViewById(R.id.login_number);
+        login_password = (EditText) viewgroup.findViewById(R.id.login_password);
+        join_button = (Button) viewgroup.findViewById(R.id.join_button2);
+        login_button = (Button) viewgroup.findViewById(R.id.login_button);
 
         join_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(requireActivity(), LoginActivity.class);
+                Intent intent = new Intent(requireActivity(), JoinActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }
         });
-        Button login_button = (Button) viewgroup.findViewById(R.id.login_button);
+
+
+        login_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                user_name = login_name.getText().toString();
+                user_password = login_password.getText().toString();
+                user_number = login_number.getText().toString();
+
+                if(user_name.getBytes().length <= 0 || user_number.getBytes().length <= 0 || user_password.getBytes().length <= 0){
+                    AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
+                    builder.setTitle("알림창").setMessage("값을 입력해주세요");
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                }
+
+                else {
+                    DBHelper helper = new DBHelper(requireActivity(), "FirstProject.db", null, 1);
+                    SQLiteDatabase db = helper.getWritableDatabase();
+                    String sql = "select * from login where number = '" + user_number + "'";
+                    Cursor cursor = db.rawQuery(sql, null);
+                    cursor.moveToFirst();
+//                    System.out.println(cursor.getColumnIndex("name")); => 1
+//                    System.out.println(cursor.getColumnIndex("password")); => 2
+//                    System.out.println(cursor.getColumnIndex("number")); => 0
+//                    System.out.println(cursor.getColumnIndex("gender")); => 3
+                    if(cursor.getCount() != 0) {
+                        //System.out.println(cursor.getString(0));
+                        //System.out.println(cursor.getString(1));
+                        //System.out.println(cursor.getString(2));
+                        //System.out.println(cursor.getString(3));
+
+                        if (cursor.getString(1).equals(user_name) && cursor.getString(2).equals(user_password)) {
+                            System.out.println(1);
+                            AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
+                            builder.setTitle("알림창").setMessage("로그인에 성공하셨습니다!!");
+                            AlertDialog alertDialog = builder.create();
+                            alertDialog.show();
+
+                            Intent intent = new Intent(requireActivity(), MainAppActivity.class);
+                            intent.putExtra("user_number",user_number);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                            startActivity(intent);
+                        }
+                    }
+                }
+
+            }
+        });
 
         return viewgroup;
     }
