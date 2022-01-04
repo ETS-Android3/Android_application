@@ -66,8 +66,13 @@ public class FirstTabDialog extends DialogFragment {
             @Override
             public void onClick(View view) {
                 ContactsVO newData = new ContactsVO();
+                String number1 = editNumber.getText().toString();
+                String num1_1 = number1.substring(0, 3);
+                String num1_2 = number1.substring(3, 7);
+                String num1_3 = number1.substring(7);
+                String number = num1_1 + "-" + num1_2 + "-" + num1_3;
                 newData.setName(editName.getText().toString());
-                newData.setNumber(editNumber.getText().toString());
+                newData.setNumber(number);
 
                 ArrayList<ContactsVO> list = new ArrayList<>();
                 AssetManager assetManager = getResources().getAssets();

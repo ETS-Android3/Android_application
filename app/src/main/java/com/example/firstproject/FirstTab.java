@@ -100,7 +100,7 @@ public class FirstTab extends Fragment {
         // Inflate the layout for this fragment
         recyclerView = rootView.findViewById(R.id.recyclerview);
         searchName = rootView.findViewById(R.id.searchName);
-        textView2 =rootView.findViewById(R.id.textView2);
+        textView2 =rootView.findViewById(R.id .textView2);
         dialogOpenButton = rootView.findViewById(R.id.dialogOpenButton);
 
         list = getContactList();
