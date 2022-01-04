@@ -20,13 +20,13 @@
         android:id="@+id/searchName"
         android:layout_width="395dp"
         android:layout_height="43dp"
-        android:background="@drawable/border_bottom"
+        android:background="@drawable/border_bottom_gray"
         android:ems="10"
         android:gravity="center_vertical"
         android:hint="  검색"
         android:inputType="textPersonName"
-        android:textSize="24sp"
 
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,7 +38,7 @@
         android:layout_gravity="center_vertical"
         android:gravity="center"
         android:text="TextView"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -52,11 +52,5 @@
         android:clickable="true"
         android:src="@drawable/plus_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" /><![CDATA[
-
-
-
-    "layout_marginRight = 16dp"
-    android:text="Button" />
-    ]]>
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
