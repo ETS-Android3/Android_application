@@ -76,6 +76,7 @@ search 메소드는 아래와 같다.
 drawable 폴더에 저장되어 있는 image 파일들을 GridView를 활용해 화면에 아래처럼 보여준다.
 
 ![Untitled](https://user-images.githubusercontent.com/81549602/148057991-d2c2f149-84cd-4eb6-bf7d-264300ac9bd7.png)
+<img src = "https://user-images.githubusercontent.com/81549602/148057991-d2c2f149-84cd-4eb6-bf7d-264300ac9bd7.png" width = "150" height = "400"/>
 
 이 과정에서 ImageGridAdapter 파일이 Gridview에 알맞게 image data들을 관리하는 역할을 한다. ImageGridAdapter에서는 아래 코드와 같이 이미지데이터를 bitmap 형식으로 변환하여 위처럼 격자 형태로 이미지가 보이도록 구현했다.
 
