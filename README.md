@@ -107,9 +107,8 @@ setImage(imageView);
 
 좌측 사진이 원래 갤러리 모습이었지만 셔플 버튼을 클릭 후, 우측 사진처럼 변했다.
 
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled%202.png)
-
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled%203.png)
+<img src = "https://user-images.githubusercontent.com/81549602/148060711-34c2281c-636f-4b48-bd87-38e86dbcf894.png" width = "350" height = "700"/>
+<img src = "https://user-images.githubusercontent.com/81549602/148060744-7c2c5fd7-ef74-4c81-9abb-9e3061271d8c.png" width = "350" height = "700"/>
 
 버튼을 클릭했을 때, onClick 이벤트가 발생하여 image들이 셔플되고, 새롭게 어댑터를 실행하여 화면에 나타나도록 아래처럼 코드를 작성했다.
 
@@ -141,7 +140,7 @@ shuffle_button.setOnClickListener(new View.OnClickListener() {
 
 아래 화면에서 사용자가 기존에 회원가입을 했다면 이름, 전화번호, 비밀번호를 입력한 뒤 로그인을 한다. 만약 회원가입한 적이 없다면 회원가입 버튼을 눌러 회원가입하는 화면으로 이동한다.
 
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled%204.png)
+<img src = "https://user-images.githubusercontent.com/81549602/148060819-c1c8934d-26f2-4fbf-a37e-d38510933630.png" width = "350" height = "700"/>
 
 이 과정에서 기존 사용자라면 데이터베이스에서 데이터를 가져와 사용자가 입력한 이름, 전화번호, 비밀번호를 비교하여 데이터베이스에 존재하는 값과 동일한 경우, 로그인이 되도록 구현했다. 또한, 만약 값이 입력되지 않은 경우, 값을 입력해달라는 alert문구를 띄웠다.
 
@@ -175,7 +174,7 @@ login_button.setOnClickListener(new View.OnClickListener() {
 
 아래와 같은 회원가입 화면에서 이름, 전화번호, 비밀번호, 성별을 입력하여 회원가입을 진행한다. 
 
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled%205.png)
+<img src = "https://user-images.githubusercontent.com/81549602/148060836-c38bfb6c-1d44-450a-813c-d7329954aa4b.png" width = "350" height = "700"/>
 
 가입버튼을 누르면 아래 코드와 같이 데이터베이스에 새로운 데이터를 insert해준다.
 
@@ -194,9 +193,9 @@ db.insert("login",null, values);
 
 회원가입이 완료되면 아래처럼 설문이 진행된다.
 
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled%206.png)
+<img src = "https://user-images.githubusercontent.com/81549602/148060848-854bc6fd-25f8-42ac-b3f3-b6abbc7bc509.png" width = "350" height = "700"/>
 
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled%207.png)
+<img src = "https://user-images.githubusercontent.com/81549602/148060861-6a9af024-f5fe-462a-b380-1a23b1dd9f36.png" width = "350" height = "700"/>
 
 설문 질문은 총 10개인데 이는 모두 Fragment로 구성되어 있으며 Fragment에서 Fragment로 이동하면서 설문이 진행된다. 이를 구현하기 위해 Activity에서 다수의 Fragment를 생성해서 관리한다.
 
@@ -242,4 +241,4 @@ private double RMSE_algorithm(int x1, int x2, int x3, int x4, int x5, int x6, in
 
 설문이 완료되거나, 로그인에 성공하면 아래 화면처럼 알고리즘을 통해 매칭된 최적의 상대를 3명 추천해준다.
 
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled.jpeg)
+<img src = "https://user-images.githubusercontent.com/81549602/148060882-8a069a9d-191a-4672-8284-ac1771f4b22e.jpeg" width = "350" height = "700"/>
