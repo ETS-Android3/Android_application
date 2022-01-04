@@ -22,6 +22,7 @@ public class ReceiveRequestAdapter extends RecyclerView.Adapter<ReceiveRequestAd
     private Context context;
     private List<String> nameList = new ArrayList<>();
     private List<String> numberList = new ArrayList<>();
+    private List<String> friendList = new ArrayList<>();
     private String myPhoneNum;
     private String friend;
     private int index;
@@ -33,14 +34,14 @@ public class ReceiveRequestAdapter extends RecyclerView.Adapter<ReceiveRequestAd
         this.myPhoneNum=myPhoneNum;
         this.friend=friend;
     }
-    public ReceiveRequestAdapter(int index, Context context, List<String> nameList, List<String> numberList,String myPhoneNum, String friend) {
+    public ReceiveRequestAdapter(int index, Context context, List<String> nameList, List<String> numberList,String myPhoneNum, List<String> friendList) {
 
         this.index = index;
         this.context = context;
         this.nameList = nameList;
         this.numberList = numberList;
-        this.myPhoneNum=myPhoneNum;
-        this.friend=friend;
+        this.myPhoneNum = myPhoneNum;
+        this.friendList=friendList;
     }
     @NonNull
     @Override
@@ -58,18 +59,27 @@ public class ReceiveRequestAdapter extends RecyclerView.Adapter<ReceiveRequestAd
             @Override
             public void onClick(View view){
                 FriendRequestDBHelper SDB = new FriendRequestDBHelper(context.getApplicationContext());
-                SDB.acceptRequest(index, myPhoneNum, friend);
-                SDB.acceptRequest(index, friend, myPhoneNum);
+                SDB.acceptRequest(index, myPhoneNum, friendList.get(itemposition));
+                SDB.acceptRequest(index, friendList.get(itemposition), myPhoneNum);
+                System.out.println(myPhoneNum);
+                System.out.println(friend);
+                System.out.println(itemposition);
+                //System.out.println(nameList.get(itemposition));
+                //System.out.println(numberList.get(itemposition));
+                friendList.remove(itemposition);
                 nameList.remove(itemposition);
                 numberList.remove(itemposition);
                 notifyDataSetChanged();
             }
         });
 
-
+        //System.out.println(nameList);
+        //System.out.println(numberList);
         holder.name.setText(nameList.get(itemposition));
         holder.number.setText(numberList.get(itemposition));
     }
+
+
 
     @Override
     public int getItemCount() {

@@ -22,10 +22,12 @@ public class ReceiveRequestActivity extends AppCompatActivity {
     DBHelper LDB;
     Cursor cursor;
     Cursor cursor2;
+    public ArrayList<String> senderList = new ArrayList<>();
     private RecyclerView receiveRequestRecyclerview;
     public static ReceiveRequestAdapter adapter;
     private ArrayList<String> numberList = new ArrayList<>();
     private ArrayList<String> nameList = new ArrayList<>();
+    int index = 0;
 
     private String sSender;
 
@@ -60,9 +62,12 @@ public class ReceiveRequestActivity extends AppCompatActivity {
             if(sa.compareTo(user_number) == 0)
             {
                 numberList.add(sSender);
-
-
-                adapter = new ReceiveRequestAdapter(1,this, nameList,numberList,user_number,sSender);
+                senderList.add(sSender);
+                //System.out.println(nameList);
+                //System.out.println(numberList);
+                //System.out.println(sSender);
+                System.out.println(senderList);
+                adapter = new ReceiveRequestAdapter(1,this, nameList,numberList,user_number,senderList);
                 //SDB.acceptRequest("1111", sSender);
                 //SDB.acceptRequest(sSender, sa);
                 //firstPerson.setText("back");
@@ -70,29 +75,30 @@ public class ReceiveRequestActivity extends AppCompatActivity {
             if(sb.compareTo(user_number) == 0)
             {
                 numberList.add(sSender);
+                senderList.add(sSender);
 
 
-                adapter = new ReceiveRequestAdapter(2,this, nameList, numberList,user_number,sSender);
+                adapter = new ReceiveRequestAdapter(2,this, nameList, numberList,user_number,senderList);
                 //SDB.acceptRequest("1111", sSender);
                 //SDB.acceptRequest(sSender, sb);
             }
             if(sc.compareTo(user_number) == 0)
             {
                 numberList.add(sSender);
+                senderList.add(sSender);
 
-
-                adapter = new ReceiveRequestAdapter(3,this, nameList, numberList,user_number,sSender);
+                adapter = new ReceiveRequestAdapter(3,this, nameList, numberList,user_number,senderList);
                 //SDB.acceptRequest("1111", sSender);
                 //SDB.acceptRequest(sSender, sc);
             }
             if(sd.compareTo(user_number) == 0)
             {
                 numberList.add(sSender);
-
+                senderList.add(sSender);
 
                 //System.out.println(nameList);
                 //System.out.println(numberList);
-                adapter = new ReceiveRequestAdapter(4,this,nameList, numberList,user_number,sSender);
+                adapter = new ReceiveRequestAdapter(4,this,nameList, numberList,user_number,senderList);
                 //SDB.acceptRequest("1111", sSender);
                 //SDB.acceptRequest(sSender, sd);
             }
@@ -110,8 +116,8 @@ public class ReceiveRequestActivity extends AppCompatActivity {
                 }
             } while (cursor2.moveToNext());
         }
-        System.out.println(nameList);
-        System.out.println(numberList);
+        //System.out.println(nameList);
+        //System.out.println(numberList);
         receiveRequestRecyclerview.setLayoutManager(new LinearLayoutManager(this));
         receiveRequestRecyclerview.setAdapter(adapter);
 
