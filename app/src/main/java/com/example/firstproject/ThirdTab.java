@@ -117,12 +117,6 @@ public class ThirdTab extends Fragment {
                         System.out.println(cursor.getString(3));
 
                         if (cursor.getString(1).equals(user_name) && cursor.getString(2).equals(user_password)) {
-                            System.out.println(1);
-                            AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
-                            builder.setTitle("알림창").setMessage("로그인에 성공하셨습니다!!");
-                            AlertDialog alertDialog = builder.create();
-                            alertDialog.show();
-
                             SDBHelper shelper = new SDBHelper(requireActivity(), "FirstProject.db", null, 1);
                             SQLiteDatabase sdb = shelper.getWritableDatabase();
                             String sql0 = "select * from survey where number = '" + user_number + "'";
@@ -203,11 +197,6 @@ public class ThirdTab extends Fragment {
                                     startActivity(intent);
                             }
 
-
-
-
-
-
                         }
                         else{
                             AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
@@ -223,10 +212,10 @@ public class ThirdTab extends Fragment {
 
         return viewgroup;
     }
-    private double RMSE_algorithm(int x1, int x2, int x3, int x4, int x5, int x6, int x7, int x8, int x9, String x10){
-        double result = Math.sqrt((Math.pow(x1-q1,2) + Math.pow(x2-q2,2) + Math.pow(x3-q3, 2)
-                + Math.pow(x4-q4,2) + Math.pow(x5-q5,2) + Math.pow(x6-q6, 2)
-                + Math.pow(x7-q7,2) + Math.pow(x8-q8,2) + Math.pow(x9-q9, 2))/9);
+    private double RMSE_algorithm(int x1, int x2, int x3, int x4, int x5, int x6, int x7, int x8, int x9, String x10) {
+        double result = Math.sqrt((Math.pow(x1 - q1, 2) * 0.99 + Math.pow(x2 - q2, 2) * 0.98 + Math.pow(x3 - q3, 2) * 0.97
+                + Math.pow(x4 - q4, 2) * 1.01 + Math.pow(x5 - q5, 2) * 1.02 + Math.pow(x6 - q6, 2) * 1.03
+                + Math.pow(x7 - q7, 2) * 1.04 + Math.pow(x8 - q8, 2) * 0.96 + Math.pow(x9 - q9, 2)) * 0.95 / 9);
         return result;
     }
 }
