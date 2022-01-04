@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
         helper = new DBHelper(MainActivity.this, "FirstProject.db", null, 1);
         db = helper.getWritableDatabase();
         helper.onCreate(db);
+
+        SDBHelper shelper;
+        SQLiteDatabase sdb;
+        shelper = new SDBHelper(MainActivity.this, "FirstProject.db", null, 1);
+        sdb = helper.getWritableDatabase();
+        shelper.onCreate(sdb);
     }
 }
 

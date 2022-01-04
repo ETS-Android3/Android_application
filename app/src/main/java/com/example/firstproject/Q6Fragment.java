@@ -14,20 +14,20 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class Q1Fragment extends Fragment {
+public class Q6Fragment extends Fragment {
 
     private Button next_button;
     private RadioGroup radioGroup;
-    private RadioButton radioButton1, radioButton2, radioButton3, radioButton4, radioButton5;
     int x;
     FragmentListener fragmentListener;
+    private RadioButton radioButton1, radioButton2, radioButton3, radioButton4, radioButton5;
 
 
-    public Q1Fragment() {
+    public Q6Fragment() {
         // Required empty public constructor
     }
-    public static Q1Fragment newInstance(String param1, String param2) {
-        Q1Fragment fragment = new Q1Fragment();
+    public static Q6Fragment newInstance(String param1, String param2) {
+        Q6Fragment fragment = new Q6Fragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -41,7 +41,7 @@ public class Q1Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        ViewGroup viewgroup = (ViewGroup) inflater.inflate(R.layout.q1, container, false);
+        ViewGroup viewgroup = (ViewGroup) inflater.inflate(R.layout.q6, container, false);
         next_button = (Button) viewgroup.findViewById(R.id.next_button);
         radioGroup = (RadioGroup) viewgroup.findViewById(R.id.radioGroup);
         radioButton1 = (RadioButton) viewgroup.findViewById(R.id.radioButton1);
@@ -76,15 +76,15 @@ public class Q1Fragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (!radioButton1.isChecked() && !radioButton2.isChecked() && !radioButton3.isChecked()
-                    && !radioButton4.isChecked() && !radioButton5.isChecked()){
+                        && !radioButton4.isChecked() && !radioButton5.isChecked()){
                     AlertDialog.Builder builder = new AlertDialog.Builder(requireActivity());
                     builder.setTitle("알림창").setMessage("버튼을 체크해주세요.");
                     AlertDialog alertDialog = builder.create();
                     alertDialog.show();
                 }
                 else {
-                    fragmentListener.setQ1(x);
-                    fragmentListener.nextQ1();
+                    fragmentListener.setQ6(x);
+                    fragmentListener.nextQ6();
                 }
             }
         });

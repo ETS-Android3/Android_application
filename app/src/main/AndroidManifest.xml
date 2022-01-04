@@ -42,6 +42,11 @@
             android:exported="true"
             android:windowSoftInputMode="adjustNothing">
         </activity>
+        <activity
+            android:name=".JoinMainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+        </activity>
     </application>
 
 

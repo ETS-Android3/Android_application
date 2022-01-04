@@ -1,6 +1,7 @@
 package com.example.firstproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -110,6 +111,8 @@ public class FirstTabDialog extends DialogFragment {
                     BufferedWriter bufwr = new BufferedWriter(fw);
                     bufwr.write(jsonObject.toString());// TODO 파일에 넣을 String값
                     bufwr.close();
+
+
                     //FirstTab a = new FirstTab().getInstance();
                     //a.show(getActivity().getSupportFragmentManager(), FirstTabDialog.TAG_EVENT_DIALOG);
 
@@ -120,8 +123,21 @@ public class FirstTabDialog extends DialogFragment {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
+
+                Intent intent = new Intent(getContext(), MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
+
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
             }
         });
         return v;
     }
+
+
 }

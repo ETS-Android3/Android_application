@@ -14,33 +14,22 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/before_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginBottom="50dp"
-            android:text="이전"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/final_button"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/final_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="50dp"
+            android:id="@+id/next_button"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="90dp"
             android:text="다음"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="340dp"
             android:layout_height="40dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="120dp"
             android:layout_marginRight="30dp"
             android:text="여행갈 때 계획을 세우는 정도는?"
             android:textAlignment="center"
@@ -51,6 +40,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="240dp"
             android:layout_height="280dp"
             android:layout_marginTop="30dp"

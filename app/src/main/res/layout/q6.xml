@@ -6,33 +6,23 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/before_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="50dp"
-        android:text="이전"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/final_button"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/final_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="50dp"
+        android:id="@+id/next_button"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="88dp"
         android:text="다음"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="340dp"
         android:layout_height="70dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="120dp"
         android:layout_marginRight="30dp"
         android:text="연인이 친한 남/여사친과 가까운 정도는 어디까지 허용가능한가?"
         android:textAlignment="center"
@@ -43,6 +33,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="200dp"
         android:layout_height="280dp"
         android:layout_marginTop="30dp"

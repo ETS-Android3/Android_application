@@ -10,11 +10,14 @@
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/3.xml" value="0.2046875" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/activity_join.xml" value="0.264" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/app_main.xml" value="0.4" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/app_main.xml" value="0.264" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/first_tab_dialog_fragment.xml" value="0.4" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/first_tab_item_view.xml" value="0.1" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_first_tab.xml" value="0.264" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_q1.xml" value="0.2046875" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_second_tab.xml" value="0.2736750651607298" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/fragment_third_tab.xml" value="0.264" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/join_main.xml" value="0.2054470100651273" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/join_survey.xml" value="0.2" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/login_survey.xml" value="0.1" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q1.xml" value="0.2" />
@@ -23,11 +26,11 @@
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q2.xml" value="0.4" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q3.xml" value="0.264" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q4.xml" value="0.264" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q5.xml" value="0.264" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q5.xml" value="0.3987836663770634" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q6.xml" value="0.4" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q7.xml" value="0.4" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q8.xml" value="0.4" />
-        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q9.xml" value="0.536" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q7.xml" value="0.3229166666666667" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q8.xml" value="0.3229166666666667" />
+        <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/q9.xml" value="0.264" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/layout/simple_image.xml" value="0.16" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/gallery_image.xml" value="0.18541666666666667" />
         <entry key="..\:/Users/GE63VR/MadCampProjects/FirstProject/app/src/main/res/mipmap-anydpi-v26/gallery_image_round.xml" value="0.18541666666666667" />
