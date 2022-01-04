@@ -99,8 +99,7 @@ imageView.setImageBitmap(bmp);
 ImageView imageView = (ImageView)findViewById(R.id.imageView);
 setImage(imageView);
 ```
-
-![Untitled](%E1%84%89%E1%85%A9%E1%84%80%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC%20%E1%84%8B%E1%85%A2%E1%86%B8%208b9a97a6039f4b399a82c875289fd7c9/Untitled%201.png)
+<img src = "https://user-images.githubusercontent.com/81549602/148060574-c25e7abf-d722-489f-9630-7ec19c8dca3a.png" width = "350" height = "700"/>
 
 ### Shuffle 기능
 
